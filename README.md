@@ -11,3 +11,10 @@ A simple and efficient To-Do List app to manage tasks easily. 🚀
 # 🛠️ Tech Stack
 * 🏗️ Backend: Spring Boot (Java)
 * 🗄️ Database: MySQL
+
+# 📜 API Endpoints
+* Method	     ~ Endpoint	                     ~ Description
+* GET    	     ~ /Show-Tasks	                 ~ Get all tasks
+* POST	       ~ /Add-Task                     ~ Add a new task
+* PUT	         ~ /updateTaskById/{id}	         ~ Update a task
+* DELETE	     ~ /DeleteTaskById/{id}	         ~ Delete a task
