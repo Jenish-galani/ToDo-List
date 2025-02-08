@@ -6,7 +6,7 @@ A simple and efficient To-Do List app to manage tasks easily. 🚀
 * ✅ Add Tasks – Quickly add new tasks.
 * ✏️ Edit Tasks – Modify existing tasks.
 * ❌ Delete Tasks – Remove tasks when completed.
-* 📋 View Tasks – List all pending and completed tasks.
+* 📋 View Tasks – List all pending.
 
 # 🛠️ Tech Stack
 * 🏗️ Backend: Spring Boot (Java)
