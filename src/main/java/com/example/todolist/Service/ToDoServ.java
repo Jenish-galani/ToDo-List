@@ -31,30 +31,4 @@ public class ToDoServ {
     public void updateRecord(ToDoList list) {
         toDoRepo.save(list);
     }
-
-//    public List<Houses> showAll() {
-//
-//        return houseRepo.findAll();
-//    }
-
-//    public List<Houses> insertRecords(List<Houses> list) {
-//        return houseRepo.saveAll(list);
-//    }
-//
-//    public List<Houses> showAll() {
-//
-//        return houseRepo.findAll();
-//    }
-
-
-//    public ToDoList save(ToDoList list) {
-//        return toDoRepo.saveAll(list);
-//    }
-//
-//    public void getList(List<ToDoList> lists) {
-//        toDoRepo.findAll();
-//    }
-//
-//    public void saveList(List<ToDoList> list) {
-//    }
 }
