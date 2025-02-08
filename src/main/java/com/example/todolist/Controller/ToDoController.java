@@ -8,35 +8,35 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping
+@RequestMapping("/ToDo-List")
 public class ToDoController {
     @Autowired
     private ToDoServ toDoServ;
 
-    @PostMapping()
+    @PostMapping("/Add-Task")
     public String save(@RequestBody ToDoList list) {
         toDoServ.save(list);
         return "Task added successfully";
     }
 
-    @GetMapping("/getAll")
+    @GetMapping("/Show-Tasks")
     public List<ToDoList> lists() {
         return toDoServ.find();
     }
 
-    @PostMapping("/saveAll")
+    @PostMapping("/Add-Tasks")
     public String saveAll(@RequestBody List<ToDoList> lists) {
         toDoServ.saveAllList(lists);
         return "Tasks Added successfully";
     }
 
-    @DeleteMapping("/DeleteById/{id}")
+    @DeleteMapping("/DeleteTaskById/{id}")
     public String deleteList(@PathVariable Integer id) {
         toDoServ.deleteTask(id);
         return "Task complete successfully";
     }
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/updateTaskById/{id}")
     public String updateList(@RequestBody ToDoList list) {
         toDoServ.save(list);
         return "Task updated successfully";
